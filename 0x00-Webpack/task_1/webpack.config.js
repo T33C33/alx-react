@@ -1,8 +1,8 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'production', // Set mode to production
-  entry: './js/dashboard_main.js', // Entry file
+  mode: 'production',
+  entry: './js/dashboard_main.js',
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
@@ -10,10 +10,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/, // Match JavaScript files
-        exclude: /node_modules/, // Exclude node_modules
+        test: /\.js$/,
+        exclude: /node_modules/,
         use: {
-          loader: 'babel-loader', // Use Babel for ES6+ compatibility
+          loader: 'babel-loader',
         },
       },
     ],
