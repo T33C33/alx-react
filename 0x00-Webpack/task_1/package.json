@@ -1,0 +1,24 @@
+{
+  "name": "task_1",
+  "version": "1.0.0",
+  "description": "1. Create a folder named `task_1`, cd into it, and create a `package.json` using `npm init -y`. 2. Install webpack (dev dependency), jQuery (dependency), and Lodash (dependency) within the folder using npm. 3. Modify your `package.json` to add a build script that runs webpack to create a production build. This lets you execute `npm run build` on the command line.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "webpack": "^5.96.1"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "jQuery": "^1.7.4",
+    "lodash": "^4.17.21"
+  }
+}
