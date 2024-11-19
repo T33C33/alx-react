@@ -4,7 +4,6 @@
   "description": "1. Create a folder named `task_1`, cd into it, and create a `package.json` using `npm init -y`. 2. Install webpack (dev dependency), jQuery (dependency), and Lodash (dependency) within the folder using npm. 3. Modify your `package.json` to add a build script that runs webpack to create a production build. This lets you execute `npm run build` on the command line.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
   "keywords": [],
