@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 module.exports = {
@@ -10,13 +10,13 @@ module.exports = {
     filename: 'bundle.js',
   },
   //Plugins
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'My Webpack Project',
-      filename: 'index.html',
-      template: './public/index.html',
-    }),
-  ],
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //     title: 'My Webpack Project',
+  //     filename: 'index.html',
+  //     template: './public/index.html',
+  //   }),
+  // ],
   //Loader
   module: {
     rules: [
