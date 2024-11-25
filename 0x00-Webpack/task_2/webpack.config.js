@@ -28,6 +28,32 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         use: ['file-loader'],
       },
+      {
+        loader: 'image-webpack-loader', // Optimizes images
+        options: {
+          mozjpeg: {
+            progressive: true,
+            quality: 75, // JPEG quality
+          },
+          optipng: {
+            enabled: true, // Enable PNG optimization
+          },
+          pngquant: {
+            quality: [0.65, 0.9], // PNG quality range
+            speed: 4,
+          },
+          gifsicle: {
+            interlaced: false, // GIF optimization
+          },
+          svgo: {
+            plugins: [
+              {
+                removeViewBox: false, // Preserve SVG viewBox
+              },
+            ],
+          },
+        },
+      },
     ],
   },
   //Loader
